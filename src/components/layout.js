@@ -35,7 +35,7 @@ const Layout = ({ children }) => (
               color: '#ffffff',
             }}
           >
-            <p>
+            <p style={{ marginBottom: '0' }}>
               Copright &copy; 2019{' '}
               <span style={{ paddingLeft: '2rem' }}>Łukasz Gancarz</span>{' '}
             </p>
