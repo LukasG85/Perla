@@ -17,6 +17,15 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: `01flzezsn2j7`,
+        // Learn about environment variables: https://gatsby.app/env-vars
+        accessToken:
+          'e51fb967bb4543e0a61ca9c0f2e15b7a6c0cb721d1801d36bc47d6c7ed1f4763',
+      },
+    },
+    {
       resolve: `gatsby-plugin-styled-components`,
       options: {
         // Add any options here

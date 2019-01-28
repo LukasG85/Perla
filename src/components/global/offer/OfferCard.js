@@ -1,20 +1,24 @@
 import React from 'react'
+import ModalBtn from './OfferModal'
 import styled from 'styled-components'
 import { styles } from '../../../utils'
+import Img from 'gatsby-image'
 
 // import Modalbtn from "./ModalOffer";
 // import img from "../img/offer/Man.jpeg";
 
-export default function OfferCard(props) {
-  const { title, price, img } = props.item
+export default function OfferCard({ offer }) {
+  const { title, price, text } = offer
+  const { fixed } = offer.img
 
   return (
     <CardWrapper style={{ position: 'relative' }}>
-      <img className="card-img" src={img} alt={title} />
+      <Img fixed={fixed} className="card-img" alt={title} />
       <div className="info">
         <h3 className="title">
-          {title}: <span>Od {price}</span>{' '}
+          {title}: <span>Od {price} zł</span>{' '}
         </h3>
+        <ModalBtn text={text} title={title} />
       </div>
     </CardWrapper>
   )
@@ -38,6 +42,7 @@ const CardWrapper = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    align-items: center;
     background-image: linear-gradient(
       to bottom,
       rgba(0, 0, 0, 0.4),
@@ -50,7 +55,7 @@ const CardWrapper = styled.div`
     font-size: 1.1rem;
     font-weight: 600;
     color: ${styles.colors.mainYellow};
-    text-transform: capitalize;
+    text-align: center;
     span {
       display: block;
       font-size: 2.1rem;

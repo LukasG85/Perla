@@ -1,7 +1,28 @@
 import React, { Component } from 'react'
 import Card from './OfferCard'
+import { StaticQuery, graphql } from 'gatsby'
 import styled from 'styled-components'
 // import Img from 'gatsby-image'
+
+const OFFER_ITEMS = graphql`
+  {
+    items: allContentfulOffer {
+      edges {
+        node {
+          title
+          price
+          id
+          text
+          img {
+            fixed(width: 220) {
+              ...GatsbyContentfulFixed_tracedSVG
+            }
+          }
+        }
+      }
+    }
+  }
+`
 
 export default class Offer extends Component {
   state = {
@@ -105,10 +126,19 @@ export default class Offer extends Component {
     ],
   }
   render() {
-    const Items = this.state.offer.map(item => (
-      <Card key={item.id} item={item} />
-    ))
-    return <OfferWrapper>{Items}</OfferWrapper>
+    return (
+      <OfferWrapper>
+        <StaticQuery
+          query={OFFER_ITEMS}
+          render={data => {
+            const offers = data.items.edges
+            return offers.map(item => {
+              return <Card key={item.node.id} offer={item.node} />
+            })
+          }}
+        />
+      </OfferWrapper>
+    )
   }
 }
 

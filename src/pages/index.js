@@ -37,8 +37,13 @@ const HomeBanner = styled.div`
     display: none;
   }
   @media(min-width: 776px){
+    background: none;
   .video-banner {
     display: block;
     height: 100%;
+  }
+  @media(min-width: 1025px){
+  .video-banner {
+    height: auto;
   }
 `
