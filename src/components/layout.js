@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import { StaticQuery, graphql } from 'gatsby'
 import Nav from '../components/global/navbar/Navbar'
 import '../components/bootstrap.min.css'
+import './layout.css'
 
 // import Header from './header'
 import './layout.css'
