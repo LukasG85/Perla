@@ -3,8 +3,8 @@ import React from 'react'
 import Layout from '../components/layout'
 import styled from 'styled-components'
 import SEO from '../components/seo'
-import HomeVideo from './PerłaVideo.mp4'
 import Main from '../components/global/HomePage/MainContent'
+import HomeVideo from './PerłaVideo.mp4'
 
 const IndexPage = () => (
   <Layout>

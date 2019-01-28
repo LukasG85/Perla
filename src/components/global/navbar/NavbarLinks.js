@@ -46,9 +46,9 @@ export default class NavbarLinks extends Component {
 }
 
 const LinkWrapper = styled.ul`
-position: relative;
-background-color: ${styles.colors.mainBlack};
-z-index: 2;
+  position: relative;
+  background-color: ${styles.colors.mainBlack};
+  z-index: 2;
   li {
     display: flex;
     align-items: center;
@@ -66,7 +66,6 @@ z-index: 2;
     cursor: pointer;
     ${styles.transDefault};
     &:hover {
-      /* background: ${styles.colors.mainGrey}; */
       color: ${styles.colors.mainYellow};
       padding: 0.5rem 1rem 0.5rem 1.3rem;
     }
@@ -80,7 +79,7 @@ z-index: 2;
     display: flex;
     margin: 0 30px 0 0;
     background-color: transparent;
-    .nav-link{
+    .nav-link {
       padding: 0.5rem 2rem 0.5rem 2rem;
     }
     .nav-link:hover {
