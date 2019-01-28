@@ -5,6 +5,7 @@ import styled from 'styled-components'
 import SEO from '../components/seo'
 import Main from '../components/global/HomePage/MainContent'
 import HomeVideo from './PerłaVideo.mp4'
+import HomeBackgroundImg from './HomePage.jpg'
 
 const IndexPage = () => (
   <Layout>
@@ -29,4 +30,15 @@ export default IndexPage
 const HomeBanner = styled.div`
   height: 97vh;
   overflow: hidden;
+  background: url(${HomeBackgroundImg});
+  background-position: center;
+  background-size:cover;
+  .video-banner {
+    display: none;
+  }
+  @media(min-width: 776px){
+  .video-banner {
+    display: block;
+    height: 100%;
+  }
 `

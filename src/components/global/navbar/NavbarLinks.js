@@ -58,7 +58,9 @@ const LinkWrapper = styled.ul`
     display: block;
     width: 100%;
     text-decoration: none;
-    padding: 0.5rem 1rem 0.5rem 1rem;
+    text-align: center;
+    font-size: 1.3rem;
+    padding: 1rem 2rem 1rem 2rem;
     color: ${styles.colors.mainWhite};
     font-weight: 400;
     text-transform: capitalize;
@@ -70,17 +72,18 @@ const LinkWrapper = styled.ul`
       padding: 0.5rem 1rem 0.5rem 1.3rem;
     }
   }
-  height: ${props => (props.open ? `152px` : `0px`)};
+  height: ${props => (props.open ? `230px` : `0px`)};
   overflow: hidden;
   ${styles.transDefault};
+
   @media (min-width: 768px) {
-    font-size: 1.5rem;
     height: auto;
     display: flex;
     margin: 0 30px 0 0;
     background-color: transparent;
     .nav-link {
       padding: 0.5rem 2rem 0.5rem 2rem;
+      font-size: 1.5rem;
     }
     .nav-link:hover {
       padding: 0.5rem 2rem 0.5rem 2rem;

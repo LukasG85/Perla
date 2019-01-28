@@ -26,10 +26,10 @@ export default class Navbar extends Component {
 }
 
 const NavWrapper = styled.nav`
+  position: fixed;
+  z-index: 2;
+  width: 100%;
   @media (min-width: 768px) {
-    position: fixed;
-    z-index: 2;
-    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;

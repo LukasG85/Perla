@@ -29,7 +29,7 @@ const HeaderWrapper = styled.div`
   background-color: ${styles.colors.mainBlack};
 
   .logo {
-    font-size: 2rem;
+    font-size: 1.3rem;
     font-family: 'Roboto', sans-serif;
     text-decoration: none;
     letter-spacing: 0.3rem;
@@ -42,7 +42,7 @@ const HeaderWrapper = styled.div`
 
   .toggle-icon {
     font-size: 2rem;
-    color: ${styles.colors.mainBrown};
+    color: ${styles.colors.mainWhite};
     cursor: pointer;
   }
 
@@ -50,6 +50,9 @@ const HeaderWrapper = styled.div`
     background-color: transparent;
     .toggle-icon {
       display: none;
+    }
+    .logo {
+      font-size: 2rem;
     }
   }
 `

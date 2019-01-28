@@ -42,19 +42,31 @@ const MainWrapper = styled.div`
   .subtitle {
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
-    font-size: 3rem;
+    font-size: 1.8rem;
     letter-spacing: 0.4rem;
   }
   .title {
     font-family: 'Roboto', sans-serif;
-    font-size: 10rem;
+    font-size: 6rem;
     letter-spacing: 1rem;
     font-weight: 900;
   }
   .owner {
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
-    font-size: 2rem;
+    font-size: 1.15rem;
     letter-spacing: 0.3rem;
+  }
+
+  @media (min-width: 776px) {
+    .subtitle {
+      font-size: 3rem;
+    }
+    .title {
+      font-size: 10rem;
+    }
+    .owner {
+      font-size: 2rem;
+    }
   }
 `
