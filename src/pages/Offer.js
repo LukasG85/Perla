@@ -21,5 +21,6 @@ const OfferWrapper = styled.div`
   justify-content: center;
   align-items: center;
   min-height: 97vh;
+  padding-top: 70px;
   background-color: #000;
 `

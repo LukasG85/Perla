@@ -16,7 +16,8 @@ export default function OfferCard({ offer }) {
       <Img fixed={fixed} className="card-img" alt={title} />
       <div className="info">
         <h3 className="title">
-          {title}: <span>Od {price} zł</span>{' '}
+          <span className="name">{title}:</span>{' '}
+          <span className="price">Od {price} zł</span>{' '}
         </h3>
         <ModalBtn text={text} title={title} />
       </div>
@@ -29,6 +30,7 @@ const CardWrapper = styled.div`
   width: 220px;
   height: 320px;
   overflow: hidden;
+  margin: 1rem;
   .card-img {
     /* width: auto; */
     height: auto;
@@ -56,7 +58,10 @@ const CardWrapper = styled.div`
     font-weight: 600;
     color: ${styles.colors.mainYellow};
     text-align: center;
-    span {
+    .name {
+      text-transform: capitalize;
+    }
+    .price {
       display: block;
       font-size: 2.1rem;
       margin-top: 0.4rem;

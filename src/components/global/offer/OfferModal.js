@@ -2,7 +2,6 @@ import React from 'react'
 import Modal from 'react-responsive-modal'
 import styled from 'styled-components'
 import { styles } from '../../../utils'
-import modalBcg from './modalBackground.jpeg'
 // import { url } from 'inspector'
 
 export default class App extends React.Component {
@@ -30,10 +29,7 @@ export default class App extends React.Component {
           onClose={this.onCloseModal}
           showCloseIcon={false}
           center
-          classNames={{
-            overlay: styles.customOverlay,
-            modal: styles.customModal,
-          }}
+          className="modal"
         >
           <div
             style={{
@@ -41,8 +37,7 @@ export default class App extends React.Component {
               display: 'flex',
               flexDirection: 'column',
               justifyContent: 'center',
-              background: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url(${props => props.modalBcg}) center/cover no-repeat`,
+              padding: '0.5rem',
             }}
           >
             <h2
@@ -53,6 +48,8 @@ export default class App extends React.Component {
                 fontFamily: "'Roboto', sans-serif",
                 textTransform: 'capitalize',
                 marginBottom: '2rem',
+                marginTop: '2rem',
+                fontWeight: '900',
               }}
             >
               {this.props.title}
@@ -63,6 +60,7 @@ export default class App extends React.Component {
                 textAlign: 'center',
                 fontSize: '1.4rem',
                 fontFamily: "'Roboto', sans-serif",
+                fontWeight: '700',
               }}
             >
               {this.props.text}

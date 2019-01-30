@@ -145,11 +145,15 @@ export default class Offer extends Component {
 const OfferWrapper = styled.div`
   width: 90%;
   margin: 0 auto;
-  display: grid;
+  display: flex;
+  /* width: 220px; */
+  /* margin: 2rem; */
+  /* display: grid;
   grid-template-columns: 220px;
-  grid-gap: 2rem;
+  grid-gap: 2rem; */
   justify-content: center;
-  @media (min-width: 476px) {
+  flex-wrap: wrap;
+  /* @media (min-width: 476px) {
     width: 90%;
     grid-template-columns: repeat(2, 220px);
   }
@@ -169,5 +173,5 @@ const OfferWrapper = styled.div`
   }
   @media (min-width: 1600px) {
     grid-template-columns: repeat(6, 220px);
-  }
+  } */
 `

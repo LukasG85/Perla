@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import NavbarHeader from './NavbarHeader'
 import NavbarLinks from './NavbarLinks'
-// import NavbarIcons from './NavbarIcons'
+import NavbarIcons from './NavbarIcons'
 import styled from 'styled-components'
 
 export default class Navbar extends Component {
@@ -20,6 +20,7 @@ export default class Navbar extends Component {
       <NavWrapper>
         <NavbarHeader handleNavbar={this.handleNavbar} />
         <NavbarLinks navbarOpen={this.state.navbarOpen} />
+        <NavbarIcons />
       </NavWrapper>
     )
   }
@@ -27,6 +28,7 @@ export default class Navbar extends Component {
 
 const NavWrapper = styled.nav`
   position: fixed;
+  height: 80px;
   z-index: 2;
   width: 100%;
   @media (min-width: 768px) {

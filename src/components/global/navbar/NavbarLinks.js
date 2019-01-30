@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import styled from 'styled-components'
 import { Link } from 'gatsby'
 import { styles } from '../../../utils'
+import { FaFacebook } from 'react-icons/fa'
 
 export default class NavbarLinks extends Component {
   state = {
@@ -69,24 +70,22 @@ const LinkWrapper = styled.ul`
     ${styles.transDefault};
     &:hover {
       color: ${styles.colors.mainYellow};
-      padding: 0.5rem 1rem 0.5rem 1.3rem;
     }
   }
-  height: ${props => (props.open ? `230px` : `0px`)};
+  height: ${props => (props.open ? `245px` : `0px`)};
   overflow: hidden;
   ${styles.transDefault};
 
   @media (min-width: 768px) {
+    width: 100%;
     height: auto;
     display: flex;
+    justify-content: flex-end;
     margin: 0 30px 0 0;
     background-color: transparent;
     .nav-link {
-      padding: 0.5rem 2rem 0.5rem 2rem;
+      padding: 0.5rem 2rem 0.5rem 1.5rem;
       font-size: 1.5rem;
-    }
-    .nav-link:hover {
-      padding: 0.5rem 2rem 0.5rem 2rem;
     }
   }
 `

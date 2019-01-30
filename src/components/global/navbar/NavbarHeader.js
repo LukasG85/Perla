@@ -4,6 +4,7 @@ import { Link } from 'gatsby'
 import { MdMenu } from 'react-icons/md'
 import styled from 'styled-components'
 import { styles } from '../../../utils'
+import { FiScissors } from 'react-icons/fi'
 
 export default class NavbarHeader extends Component {
   render() {
@@ -11,7 +12,8 @@ export default class NavbarHeader extends Component {
     return (
       <HeaderWrapper>
         <Link className="logo" to="/">
-          <h2>Perła</h2>
+          <FiScissors className="scissors" />
+          <h2 style={{ marginBottom: '0' }}>Perła</h2>
         </Link>
         <MdMenu className="toggle-icon" onClick={() => handleNavbar()} />
       </HeaderWrapper>
@@ -29,6 +31,10 @@ const HeaderWrapper = styled.div`
   background-color: ${styles.colors.mainBlack};
 
   .logo {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 140px;
     font-size: 1.3rem;
     font-family: 'Roboto', sans-serif;
     text-decoration: none;
@@ -37,6 +43,12 @@ const HeaderWrapper = styled.div`
     ${styles.transObject({})};
     &:hover {
       color: ${styles.colors.mainYellow};
+    }
+    .scissors {
+      margin-right: 0.5rem;
+    }
+    @media (min-width: 992px) {
+      justify-content: center;
     }
   }
 

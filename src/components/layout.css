@@ -5,3 +5,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.styles_modal__gNwvD {
+    background: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)),
+        url(../components/global/offer/modalBackground.jpeg) center/cover no-repeat;
+    padding: 0;
+}
