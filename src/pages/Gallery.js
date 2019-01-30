@@ -8,8 +8,6 @@ import Helmet from 'react-helmet'
 // import Lightbox from 'react-images'
 import Gallery from '../components/gallery/Lightbox'
 
-let Images = []
-
 class HomeIndex extends Component {
   constructor() {
     super()
@@ -27,7 +25,7 @@ class HomeIndex extends Component {
     this.handleClickImage = this.handleClickImage.bind(this)
   }
 
-  componentWillMount() {
+  componentDidMount() {
     const contentful = require('contentful')
 
     const client = contentful.createClient({

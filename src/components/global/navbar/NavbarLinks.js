@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import styled from 'styled-components'
 import { Link } from 'gatsby'
 import { styles } from '../../../utils'
-import { FaFacebook } from 'react-icons/fa'
 
 export default class NavbarLinks extends Component {
   state = {
