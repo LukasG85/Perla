@@ -1,11 +1,7 @@
 import React, { Component } from 'react'
-// import { Link } from 'gatsby'
 import Layout from '../components/layout'
 import styled from 'styled-components'
-// import React from 'react'
 import Helmet from 'react-helmet'
-// import Layout from '../components/layout'
-// import Lightbox from 'react-images'
 import Gallery from '../components/gallery/Lightbox'
 
 class HomeIndex extends Component {

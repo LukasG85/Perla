@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import { Link } from 'gatsby'
-// import { FaHips } from 'react-icons/fa'
 import { MdMenu } from 'react-icons/md'
 import styled from 'styled-components'
 import { styles } from '../../../utils'
