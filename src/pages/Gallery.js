@@ -10,25 +10,6 @@ import Gallery from '../components/gallery/Lightbox'
 
 let Images = []
 
-const contentful = require('contentful')
-
-const client = contentful.createClient({
-  space: '01flzezsn2j7',
-  environment: 'master', // defaults to 'master' if not set
-  accessToken:
-    'e51fb967bb4543e0a61ca9c0f2e15b7a6c0cb721d1801d36bc47d6c7ed1f4763',
-})
-
-client
-  .getEntries()
-  .then(response => response.items[8].fields.images)
-  .then(data => {
-    data.map(image => {
-      return Images.push(image.fields.file)
-    })
-  })
-  .catch(console.error)
-
 class HomeIndex extends Component {
   constructor() {
     super()
@@ -36,6 +17,7 @@ class HomeIndex extends Component {
     this.state = {
       lightboxIsOpen: false,
       currentImage: 0,
+      images: [],
     }
 
     this.closeLightbox = this.closeLightbox.bind(this)
@@ -43,6 +25,31 @@ class HomeIndex extends Component {
     this.gotoPrevious = this.gotoPrevious.bind(this)
     this.openLightbox = this.openLightbox.bind(this)
     this.handleClickImage = this.handleClickImage.bind(this)
+  }
+
+  componentWillMount() {
+    const contentful = require('contentful')
+
+    const client = contentful.createClient({
+      space: '01flzezsn2j7',
+      environment: 'master', // defaults to 'master' if not set
+      accessToken:
+        'e51fb967bb4543e0a61ca9c0f2e15b7a6c0cb721d1801d36bc47d6c7ed1f4763',
+    })
+
+    client
+      .getEntries()
+      .then(response => response.items[8].fields.images)
+      .then(data => {
+        let images = data.map(image => {
+          return image.fields.file
+        })
+        this.setState({
+          images: images,
+        })
+      })
+
+      .catch(console.error)
   }
 
   openLightbox(index, event) {
@@ -86,7 +93,7 @@ class HomeIndex extends Component {
         </Helmet>
         <GalleryWrapper>
           <Gallery
-            images={Images.map(
+            images={this.state.images.map(
               ({ id, url, src = url, caption, description }) => ({
                 url,
                 src,

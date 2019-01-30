@@ -146,10 +146,15 @@ const GalleryWrapper = styled.div`
       &:hover {
         filter: brightness(40%);
       }
-      .image-link {
-        display: block;
-        height: 100%;
-        .loup {
+    }
+    .image-link {
+      display: block;
+      height: 100%;
+
+      .loup {
+        display: none;
+        @media (min-width: 992px) {
+          display: block;
           position: absolute;
           top: 50%;
           left: 50%;
@@ -159,11 +164,11 @@ const GalleryWrapper = styled.div`
           ${styles.transObject({})};
         }
       }
+    }
 
-      &:hover .loup {
-        color: ${styles.colors.mainWhite};
-        filter: brightness(200%);
-      }
+    &:hover .loup {
+      color: ${styles.colors.mainWhite};
+      filter: brightness(200%);
     }
   }
 `
