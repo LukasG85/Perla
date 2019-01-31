@@ -5,7 +5,7 @@ import styled from 'styled-components'
 import SEO from '../components/seo'
 import Main from '../components/global/HomePage/MainContent'
 import HomeVideo from './PerłaVideo.mp4'
-import HomeBackgroundImg from './HomePage.jpg'
+import HomeBackgroundImg from './home.jpeg'
 
 const IndexPage = () => (
   <Layout>
