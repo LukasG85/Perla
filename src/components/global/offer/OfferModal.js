@@ -66,15 +66,16 @@ export default class App extends React.Component {
               {this.props.text}
             </p>
             <button
+              className="modal-btn"
               onClick={this.onCloseModal}
-              style={{
-                fontSize: '1.5rem',
-                padding: '0.5rem 1rem',
-                border: 'none',
-                cursor: 'pointer',
-                margin: '2rem auto',
-                backgroundColor: `${styles.colors.mainYellow}`,
-              }}
+              // style={{
+              //   fontSize: '1.5rem',
+              //   padding: '0.5rem 1rem',
+              //   border: 'none',
+              //   cursor: 'pointer',
+              //   margin: '2rem auto',
+              //   backgroundColor: `${styles.colors.mainYellow}`,
+              // }}
             >
               Zamknij
             </button>

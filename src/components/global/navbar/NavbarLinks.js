@@ -34,7 +34,11 @@ export default class NavbarLinks extends Component {
         {this.state.links.map(item => {
           return (
             <li key={item.id}>
-              <Link to={item.path} className="nav-link">
+              <Link
+                onClick={() => this.props.handleNavbar()}
+                to={item.path}
+                className="nav-link"
+              >
                 {item.name}
               </Link>
             </li>

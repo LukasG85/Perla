@@ -10,16 +10,7 @@ const MainContent = () => {
       <h1 className="title">Perła</h1>
       <h4 className="owner">Anna Król Jodłowa 29A</h4>
       <Link to="/Offer/" style={{ textDecoration: 'none' }}>
-        <BannerButton
-          style={{
-            padding: '1rem 2rem',
-            marginTop: '3rem',
-            fontFamily: "'Roboto', sans-serif'",
-            fontSize: '2rem',
-          }}
-        >
-          zobacz
-        </BannerButton>
+        <BannerButton className="home-btn">zobacz</BannerButton>
       </Link>
     </MainWrapper>
   )
@@ -57,6 +48,12 @@ const MainWrapper = styled.div`
     font-size: 1.15rem;
     letter-spacing: 0.3rem;
   }
+  .home-btn {
+    padding: 0.5rem 1rem;
+    margin-top: 3rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+  }
 
   @media (min-width: 776px) {
     .subtitle {
@@ -66,6 +63,11 @@ const MainWrapper = styled.div`
       font-size: 10rem;
     }
     .owner {
+      font-size: 2rem;
+    }
+    .home-btn {
+      padding: 1rem 2rem;
+      font-family: 'Roboto', sans-serif;
       font-size: 2rem;
     }
   }

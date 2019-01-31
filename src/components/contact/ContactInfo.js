@@ -14,7 +14,7 @@ export default function ContactInfo() {
           <h3>PERŁA Salon Fryzjerski</h3>
           <p>39-225 Jodłowa</p>
           <p>Jodłowa 29A</p>
-          <p>
+          <p className="phone-container">
             <MdPhoneForwarded className="phone" /> 889626839
           </p>
         </div>
@@ -44,8 +44,9 @@ const InfoWrapper = styled.div`
     align-items: center;
     text-align: center;
     margin-bottom: 2rem;
+    font-size: 2rem;
     @media (min-width: 776px) {
-      font-size: 2rem;
+      font-size: 4rem;
     }
   }
   .info-wrapper {
@@ -79,13 +80,23 @@ const InfoWrapper = styled.div`
     p {
       font-size: 1rem;
       text-align: center;
+      padding: 0.2rem 0;
       @media (min-width: 776px) {
+        padding: 0.5rem 0;
         font-size: 1.5rem;
         text-align: left;
       }
     }
-    .phone {
-      margin-right: 0.5rem;
+    .phone-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      @media (min-width: 776px) {
+        justify-content: flex-start;
+      }
+      .phone {
+        margin-right: 0.5rem;
+      }
     }
   }
 `

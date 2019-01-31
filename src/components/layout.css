@@ -7,7 +7,22 @@
 }
 
 .styles_modal__gNwvD {
-    background: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)),
+    background: linear-gradient(rgba(200, 200, 200, 0.85), rgba(200, 200, 200, 0.85)),
         url(../components/global/offer/modalBackground.jpeg) center/cover no-repeat;
     padding: 0;
+}
+
+.modal-btn {
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+    margin: 2rem auto;
+    background-color: #d2aa5c;
+    transition: 0.3s all ease-in-out;
+}
+
+.modal-btn:hover {
+    background-color: #000000;
+    color: #ffffff;
 }
