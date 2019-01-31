@@ -13,17 +13,17 @@ export default class NavbarLinks extends Component {
       },
       {
         id: 1,
-        path: '/Offer',
+        path: '/offer',
         name: 'Oferta',
       },
       {
         id: 2,
-        path: '/Gallery',
+        path: '/gallery',
         name: 'Galeria',
       },
       {
         id: 3,
-        path: '/Contact',
+        path: '/contact',
         name: 'Kontakt',
       },
     ],

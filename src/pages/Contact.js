@@ -2,8 +2,8 @@ import React, { Component } from 'react'
 import Layaut from '../components/layout'
 import ContactInfo from '../components/contact/ContactInfo'
 import styled from 'styled-components'
-import ContactBcg from './contact.jpeg'
-import ContactMobile from './contactPhone.jpeg'
+import ContactBcg from '../images/contact.jpeg'
+import ContactMobile from '../images/contactPhone.jpeg'
 
 export default class Contact extends Component {
   render() {
