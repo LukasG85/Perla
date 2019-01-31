@@ -9,7 +9,7 @@ const MainContent = () => {
       <h3 className="subtitle">Salon fryzjerski</h3>
       <h1 className="title">Perła</h1>
       <h4 className="owner">Anna Król Jodłowa 29A</h4>
-      <Link to="/Offer/" style={{ textDecoration: 'none' }}>
+      <Link to="/offer/" style={{ textDecoration: 'none' }}>
         <BannerButton className="home-btn">zobacz</BannerButton>
       </Link>
     </MainWrapper>
