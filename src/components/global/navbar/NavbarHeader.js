@@ -47,6 +47,7 @@ const HeaderWrapper = styled.div`
       margin-right: 0.5rem;
     }
     @media (min-width: 992px) {
+      width: 200px;
       justify-content: center;
     }
   }
