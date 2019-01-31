@@ -45,6 +45,7 @@ const InfoWrapper = styled.div`
     text-align: center;
     margin-bottom: 2rem;
     font-size: 2rem;
+    font-weight: 400;
     @media (min-width: 776px) {
       font-size: 4rem;
     }
@@ -65,6 +66,7 @@ const InfoWrapper = styled.div`
     }
     h3 {
       font-size: 1.3rem;
+      font-weight: 400;
       text-align: center;
       margin-bottom: 1rem;
       @media (min-width: 776px) {
@@ -79,6 +81,7 @@ const InfoWrapper = styled.div`
     }
     p {
       font-size: 1rem;
+      font-weight: 400;
       text-align: center;
       padding: 0.2rem 0;
       @media (min-width: 776px) {

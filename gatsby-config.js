@@ -4,9 +4,9 @@ require('dotenv').config({
 
 module.exports = {
   siteMetadata: {
-    title: `Perła`,
-    description: `Najlepszy salon fryzjerski w okolicy`,
-    author: `@gatsbyjs`,
+    title: `Perła Jodłowa`,
+    description: `Najlepszy salon fryzjerski w Jodłowej`,
+    author: `Łukasz Gancarz`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -20,6 +20,7 @@ module.exports = {
 
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+
     {
       resolve: `gatsby-source-contentful`,
       options: {

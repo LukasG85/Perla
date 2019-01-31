@@ -35,6 +35,9 @@ export default class NavbarLinks extends Component {
           return (
             <li key={item.id}>
               <Link
+                activeStyle={{
+                  color: `${styles.colors.mainYellow}`,
+                }}
                 onClick={() => this.props.handleNavbar()}
                 to={item.path}
                 className="nav-link"
@@ -66,7 +69,7 @@ const LinkWrapper = styled.ul`
     font-size: 1.3rem;
     padding: 1rem 2rem 1rem 2rem;
     color: ${styles.colors.mainWhite};
-    font-weight: 400;
+    font-weight: 300;
     text-transform: capitalize;
     font-family: 'Roboto', sans-serif;
     cursor: pointer;
