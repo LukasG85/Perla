@@ -8,7 +8,18 @@ import HomeBackgroundImg from '../images/home.jpeg'
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+    <SEO
+      title="Perła"
+      keywords={[
+        `salon fryzjerski jodłowa`,
+        `salon perła`,
+        `zakład fryzjerski jodłowa`,
+        `fryzjer`,
+        `jodłowa fryzjer`,
+        `perła salon fryzjerski`,
+        `perła`,
+      ]}
+    />
     <HomeBanner>
       <video
         className="video-banner"
