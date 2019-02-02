@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import Layout from '../components/layout'
 import styled from 'styled-components'
-import Helmet from 'react-helmet'
 import Gallery from '../components/gallery/Lightbox'
 
 class HomeIndex extends Component {
@@ -75,15 +74,8 @@ class HomeIndex extends Component {
   }
 
   render() {
-    const siteTitle = 'Gatsby Starter - Strata'
-    const siteDescription = 'Site description'
-
     return (
       <Layout>
-        <Helmet>
-          <title>{siteTitle}</title>
-          <meta name="description" content={siteDescription} />
-        </Helmet>
         <GalleryWrapper>
           <Gallery
             images={this.state.images.map(
