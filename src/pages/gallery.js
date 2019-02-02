@@ -25,9 +25,10 @@ class HomeIndex extends Component {
     const contentful = require('contentful')
 
     const client = contentful.createClient({
-      space: SPACE_ID,
+      space: '01flzezsn2j7',
       environment: 'master', // defaults to 'master' if not set
-      accessToken: ACCESS_TOKEN,
+      accessToken:
+        'e51fb967bb4543e0a61ca9c0f2e15b7a6c0cb721d1801d36bc47d6c7ed1f4763',
     })
 
     client
