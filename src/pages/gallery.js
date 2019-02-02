@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import Layout from '../components/layout'
 import styled from 'styled-components'
 import Gallery from '../components/gallery/Lightbox'
+const spaceId = process.env.SPACE_ID
+const accessTok = process.env.ACCESS_TOKEN
 
 class HomeIndex extends Component {
   constructor() {
@@ -25,10 +27,9 @@ class HomeIndex extends Component {
     const contentful = require('contentful')
 
     const client = contentful.createClient({
-      space: '01flzezsn2j7',
+      space: `${spaceId}`,
       environment: 'master', // defaults to 'master' if not set
-      accessToken:
-        'e51fb967bb4543e0a61ca9c0f2e15b7a6c0cb721d1801d36bc47d6c7ed1f4763',
+      accessToken: `${accessTok}`,
     })
 
     client
