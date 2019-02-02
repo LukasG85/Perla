@@ -21,6 +21,7 @@ class HomeIndex extends Component {
   }
 
   componentDidMount() {
+    // date from contentful
     const contentful = require('contentful')
 
     const client = contentful.createClient({
