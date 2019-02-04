@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { StaticQuery, graphql } from 'gatsby'
 import Nav from '../components/global/navbar/Navbar'
+import Footer from '../components/global/Footer'
 import './layout.css'
 
 const Layout = ({ children }) => (
@@ -20,7 +21,8 @@ const Layout = ({ children }) => (
         <div>
           <Nav />
           {children}
-          <footer
+          <Footer />
+          {/* <footer
             style={{
               display: 'flex',
               justifyContent: 'center',
@@ -32,9 +34,24 @@ const Layout = ({ children }) => (
           >
             <p style={{ marginBottom: '0' }}>
               Copright &copy; 2019{' '}
-              <span style={{ paddingLeft: '2rem' }}>Łukasz Gancarz</span>{' '}
+              <span
+                style={{
+                  paddingLeft: '2rem',
+                  position: 'relative',
+                  zIndex: '2',
+                }}
+              >
+                <a
+                  href="https://lukaszgancarz.netlify.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ textDecoration: 'none', color: 'white' }}
+                >
+                  Łukasz Gancarz
+                </a>
+              </span>{' '}
             </p>
-          </footer>
+              </footer>*/}
         </div>
       </>
     )}
