@@ -32,8 +32,10 @@ class HomeIndex extends Component {
 
     client
       .getEntries()
-      .then(response => response.items[8].fields.images)
+      // .then(response => console.log(response))
+      .then(response => response.items[14].fields.images)
       .then(data => {
+        console.log(data)
         let images = data.map(image => {
           return image.fields.file
         })

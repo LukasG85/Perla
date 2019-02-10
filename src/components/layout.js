@@ -22,36 +22,6 @@ const Layout = ({ children }) => (
           <Nav />
           {children}
           <Footer />
-          {/* <footer
-            style={{
-              display: 'flex',
-              justifyContent: 'center',
-              alignItems: 'center',
-              background: '#000000',
-              height: '3vh',
-              color: '#ffffff',
-            }}
-          >
-            <p style={{ marginBottom: '0' }}>
-              Copright &copy; 2019{' '}
-              <span
-                style={{
-                  paddingLeft: '2rem',
-                  position: 'relative',
-                  zIndex: '2',
-                }}
-              >
-                <a
-                  href="https://lukaszgancarz.netlify.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  style={{ textDecoration: 'none', color: 'white' }}
-                >
-                  Łukasz Gancarz
-                </a>
-              </span>{' '}
-            </p>
-              </footer>*/}
         </div>
       </>
     )}
