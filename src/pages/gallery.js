@@ -18,6 +18,7 @@ class HomeIndex extends Component {
     this.gotoPrevious = this.gotoPrevious.bind(this)
     this.openLightbox = this.openLightbox.bind(this)
     this.handleClickImage = this.handleClickImage.bind(this)
+    this.pictures = []
   }
 
   componentDidMount() {
@@ -32,17 +33,26 @@ class HomeIndex extends Component {
 
     client
       .getEntries()
-      // .then(response => console.log(response))
-      .then(response => response.items[14].fields.images)
-      .then(data => {
-        console.log(data)
-        let images = data.map(image => {
-          return image.fields.file
+      .then(entries => {
+        let images
+        entries.items.forEach(function(entry) {
+          if (entry.fields.images) {
+            const imagesData = entry.fields.images
+
+            images = imagesData.map(image => {
+              return image.fields.file
+            })
+            return images
+          }
         })
-        this.setState({
-          images: images,
-        })
+
+        this.pictures = [...images]
       })
+      .then(() =>
+        this.setState({
+          images: this.pictures,
+        })
+      )
 
       .catch(console.error)
   }
