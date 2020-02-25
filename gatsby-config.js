@@ -4,8 +4,8 @@ require('dotenv').config({
 
 module.exports = {
   siteMetadata: {
-    title: `Perła Jodłowa`,
-    description: `Najlepszy salon fryzjerski w Jodłowej`,
+    title: `Perła Jodłowa - Najlepszy salon fryzjerski w okolicy`,
+    description: `Perła - Super ceny i mega zadowoleni klienci. Strzyżenie damskie, strzyżenie męskie, fryzury okolicznościowe, fryzury ślubne, koloryzacja, prostowanie, modelowanie, trwała ondulacja, sauna, prostowanie keratynowe i wiele innych. Zapraszamy do naszego salonu w Jodłowej`,
     author: `Łukasz Gancarz`,
   },
   plugins: [

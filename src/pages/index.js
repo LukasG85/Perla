@@ -9,7 +9,7 @@ import HomeBackgroundImg from '../images/home.jpeg'
 const IndexPage = () => (
   <Layout>
     <SEO
-      title="Perła"
+      title="Perła - Najlepszy salon fryzjerski w okolicy"
       keywords={[
         `salon fryzjerski jodłowa`,
         `salon perła`,
@@ -18,6 +18,15 @@ const IndexPage = () => (
         `jodłowa fryzjer`,
         `perła salon fryzjerski`,
         `perła`,
+        'barber',
+        'hair',
+        'fryzjer w super cenie',
+        'koloryzacja',
+        'strzyżenie męskie',
+        'strzyżenie damskie',
+        'farbowanie',
+        'fryzury okolicznościowe',
+        'fryzury ślubne',
       ]}
     />
     <HomeBanner>
