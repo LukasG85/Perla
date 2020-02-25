@@ -10,7 +10,7 @@ export default class Offer extends Component {
     return (
       <Layout>
         <SEO
-          title="Perła - Oferta"
+          title="Oferta"
           keywords={[
             `salon fryzjerski jodłowa`,
             `salon perła`,

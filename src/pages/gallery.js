@@ -91,7 +91,7 @@ class HomeIndex extends Component {
     return (
       <Layout>
         <SEO
-          title="Perła - Galeria"
+          title="Galeria"
           keywords={[
             `salon fryzjerski jodłowa`,
             `salon perła`,

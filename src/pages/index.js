@@ -9,7 +9,7 @@ import HomeBackgroundImg from '../images/home.jpeg'
 const IndexPage = () => (
   <Layout>
     <SEO
-      title="Perła - Najlepszy salon fryzjerski w okolicy"
+      title="Home"
       keywords={[
         `salon fryzjerski jodłowa`,
         `salon perła`,

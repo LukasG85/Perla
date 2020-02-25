@@ -11,7 +11,7 @@ export default class Contact extends Component {
     return (
       <Layout>
         <SEO
-          title="Perła - Kontakt"
+          title="Kontakt"
           keywords={[
             `salon fryzjerski jodłowa`,
             `salon perła`,
