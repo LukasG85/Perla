@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import Layaut from '../components/layout'
+import Layout from '../components/layout'
+import SEO from '../components/seo'
 import ContactInfo from '../components/contact/ContactInfo'
 import styled from 'styled-components'
 import ContactBcg from '../images/contact.jpeg'
@@ -8,11 +9,23 @@ import ContactMobile from '../images/contactPhone.jpeg'
 export default class Contact extends Component {
   render() {
     return (
-      <Layaut>
+      <Layout>
+        <SEO
+          title="Perła - Kontakt"
+          keywords={[
+            `salon fryzjerski jodłowa`,
+            `salon perła`,
+            `zakład fryzjerski jodłowa`,
+            `fryzjer`,
+            `jodłowa fryzjer`,
+            `perła salon fryzjerski`,
+            `perła`,
+          ]}
+        />
         <ContactWrapper>
           <ContactInfo />
         </ContactWrapper>
-      </Layaut>
+      </Layout>
     )
   }
 }

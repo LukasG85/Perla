@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Layout from '../components/layout'
+import SEO from '../components/seo'
 import styled from 'styled-components'
 import Gallery from '../components/gallery/Lightbox'
 
@@ -89,6 +90,18 @@ class HomeIndex extends Component {
   render() {
     return (
       <Layout>
+        <SEO
+          title="Perła - Galeria"
+          keywords={[
+            `salon fryzjerski jodłowa`,
+            `salon perła`,
+            `zakład fryzjerski jodłowa`,
+            `fryzjer`,
+            `jodłowa fryzjer`,
+            `perła salon fryzjerski`,
+            `perła`,
+          ]}
+        />
         <GalleryWrapper>
           <Gallery
             images={this.state.images.map(
