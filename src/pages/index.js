@@ -27,6 +27,7 @@ const IndexPage = () => (
         'farbowanie',
         'fryzury okolicznościowe',
         'fryzury ślubne',
+        'super fryzura',
       ]}
     />
     <HomeBanner>
