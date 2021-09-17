@@ -20,7 +20,7 @@ export default function ContactInfo() {
         </div>
         <div className="open">
           <h3>Godziny otwarcia:</h3>
-          <p>Poniedziałek - Piątek 8 - 17</p>
+          <p>Poniedziałek - Piątek 9 - 17</p>
           <p>Wtorek Nieczynne</p>
           <p>Sobota 8 - 13</p>
         </div>
